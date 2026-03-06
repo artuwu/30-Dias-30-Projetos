@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRduMi6KTSeWI5VVAQztEuDPzywwlEizYxJOg&s">
+    <link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2022/05/23/00/17/slime-7214924_1280.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
@@ -55,7 +55,7 @@
     <!-- About me (Main) -->
      
     <main>
-        <div class="main-container">
+        <div id="about" class="main-container">
             <div class="left-container">
                 <h1>Sobre Mim</h1>
                 <p>  Analista de dados aprendiz e desenvolvedor Front-End 
@@ -70,26 +70,52 @@
             </div>
             <div class="right-container">
                 <div class="ctt-list">
-                    <a href="https://github.com/artuwu" target="_blank">
+                    <a href="https://github.com/artuwu" target="_blank" class="git">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="mailto:arturm.israel@gmail.com" target="_blank">
+                    <a href="mailto:arturm.israel@gmail.com" target="_blank" class="mail">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/artur-mendes-ba017737b/" target="_blank">
+                    <a href="https://www.linkedin.com/in/artur-mendes-ba017737b/" target="_blank" class="lkdn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="https://www.instagram.com/a._.mendessz/" target="_blank">
+                    <a href="https://www.instagram.com/a._.mendessz/" target="_blank" class="insta">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
                 <div class="photo-container">
                     <img src="imgs/myself.jpg" class="myself" alt="eu ai">
-                    <h3 id="about">Artur Mendes Israel</h3>
+                    <h3>Artur Mendes Israel</h3>
                 </div>
             </div>
         </div>
     </main>
 
+    <section id="project" class="project">
+        <div class="project-container">
+            <h1>Em Construção.</h1>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" class="text" placeholder="Seu nome" required>
+            <input type="email" class="email" placeholder="Seu email" required>
+            <textarea class="textarea" placeholder="Deixe sua mensagem"></textarea>
+        </form>
+        <a href="#" class="button">
+            <button type="submit" class="submit">Enviar</button>
+        </a>
+        <p>Ou</p>
+
+        <a href="mailto:arturm.israel@gmail.com" target="_blank" class="contact-mail">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Artur Mendes Israel. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
