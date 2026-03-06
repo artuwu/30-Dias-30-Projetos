@@ -1,0 +1,210 @@
+/* Auto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inria Sans", sans-serif;
+}
+
+body {
+    background-color: #EDFFEC;
+}
+
+/* Header */
+header {
+    background-color: #8B80F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+    padding-left: 13px;
+    padding-bottom: 11px;
+    max-height: 74px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.icon {
+    width: 78px;
+    height: 52px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 88px;
+    font-size: 32px;
+}
+
+.navlinks a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #463464;
+}
+
+span {
+    opacity: 0;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #463464;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    padding-top: 120px;
+    letter-spacing: -1px;
+}
+
+.hero h3 {
+    font-size: 38px;
+    padding-top: 100px;
+    font-weight: 400;
+    word-wrap: break-word;
+    max-width: 727px;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    padding-top: 50px;
+    font-size: 36px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.buttons-section {
+    padding-top: 100px;
+    padding-bottom: 170px;
+    display: flex;
+    gap: 50px;
+}
+
+.btn-project,
+.btn-contact {
+    width: 250px;
+    height: 60px;
+    border-radius: 40px;
+    font-size: 30px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-project {
+    background-color: #463464;
+    color: #FFF;
+}
+
+.btn-project:hover {
+    cursor: pointer;
+    color: #463464;
+    background-color: #8B80F9;
+    border: 3px solid #463464;
+}
+
+.btn-contact {
+    border: 3px solid #463464;
+    color: #463464
+}
+
+.btn-contact:hover {
+    cursor: pointer;
+    color: #EDFFEC;
+    background-color: #8B80F9;
+}
+
+.btn-contact:active,
+.btn-project:active {
+  transform: scale(0.9);
+  transition: transform 0.1s
+}
+
+.hero a:hover,
+.hero a:visited,
+.hero a:active,
+.hero a:link {
+    color: #463464;
+}
+
+.hero i {
+    font-size: 53px;
+    display: inline-block;
+    animation: sobe-desce 1.5s infinite;
+    padding-bottom: 20px;
+}
+
+@keyframes sobe-desce {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+/* About me */
+.main-container {
+    background-color: #463464;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1000px;
+}
+
+.left-container h1 {
+    font-size: 64px;
+    padding-top: 170px;
+    color: #ccc;
+}
+
+.left-container p {
+    padding-top: 150px;
+    color: #ccc;
+    font-size: 30px;
+    width: 770px;
+    text-align: justify;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.ctt-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    gap: 15px;
+}
+
+.ctt-list i {
+    font-size: 40px;
+    color: #ccc;
+}
+
+.photo-container {
+    padding-top: 120px;
+    padding-right: 51px;
+    padding-left: 10px;
+}
+
+.myself {
+    border-radius: 30px;
+}
+
+.photo-container h3 {
+    font-family: "Qwigley", cursive;
+    font-size: 55px;
+    font-weight: 200;
+    color: #ccc;
+    padding-left: 410px;
+}
